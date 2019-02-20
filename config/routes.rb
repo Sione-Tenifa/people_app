@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'people/update'
+  get 'people/delete'
+  root 'static_pages#home'
+
+  get '/about', to: 'static_pages#about'
+
   resources :people
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

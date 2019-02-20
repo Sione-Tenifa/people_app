@@ -1,5 +1,6 @@
 <h1>People App</h1>
 <p><%= link_to 'New Page', new_person_path %></p>
+<p><%= link_to 'Update', people_update_path %></p>
 
 <% @people.each do |person| %>
   <h2><%= person.name %></h2>
